@@ -10,8 +10,8 @@
 ## Screenshots
 
 <div align="center">
-<img src="Glance.png" width="150"/>
-<img src="FullApp.png" width="150"/>
+<img src="Glance.png" width="300"/>
+<img src="FullApp.png" width="300"/>
 
 </div>
 
