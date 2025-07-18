@@ -68,7 +68,7 @@ class waktuSolatHomeAssistantView extends WatchUi.View {
         
         // Location display below next prayer time - in green color
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(width / 2, 160, Graphics.FONT_XTINY, _location, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, 340, Graphics.FONT_XTINY, _location, Graphics.TEXT_JUSTIFY_CENTER);
         
         // Calculate centered content area with wider margins
         var contentWidth = width - 75; // Leave 10px margin on each side (wider content)

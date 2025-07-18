@@ -1,20 +1,17 @@
-# 🕌 Waktu Solat ConnectIQ App
+# Waktu Solat ConnectIQ App
 
 > **A simple Islamic prayer times app for Garmin watches**
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/salihinsaealal/waktu-solat-connectiq)
 [![ConnectIQ](https://img.shields.io/badge/ConnectIQ-Compatible-blue.svg)](https://developer.garmin.com/connect-iq/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-orange.svg)](https://coff.ee/salihin)
 
-## 📱 Screenshots
+## Screenshots
 
 <div align="center">
-
-### Main App View
-![Full App](FullApp.png)
-
-### Glance View
-![Glance Menu](Glance.png)
+<img src="Glance.png" width="150"/>
+<img src="FullApp.png" width="150"/>
 
 </div>
 
@@ -22,26 +19,26 @@
 
 ---
 
-## ✨ What This App Does
+## What This App Does
 
-### 🎯 **Main App**
-- **🖼️ Logo at the top** - Shows the app icon
-- **⏰ Time countdown** - Shows how much time left until next prayer (HH:MM format)
-- **📍 Location** - Shows your location (currently shows "Jasin")
-- **🕐 Prayer times** - All times shown in 12-hour format with AM/PM
-- **🎨 Color coding** - Easy to see which prayer is which
-  - 🟢 **Green**: The prayer time you're in now
-  - 🟡 **Yellow**: The next prayer coming up
-  - ⚪ **Gray**: Other prayer times
-- **📜 Scroll to see all** - You can scroll up and down to see all prayers
-- **🎛️ Simple design** - Clean and easy to read
+### **Main App**
+- **Logo at the top** - Shows the app icon
+- **Time countdown** - Shows how much time left until next prayer (HH:MM format)
+- **Location** - Shows your location (currently shows "Jasin")
+- **Prayer times** - All times shown in 12-hour format with AM/PM
+- **Color coding** - Easy to see which prayer is which
+  - **Green**: The prayer time you're in now
+  - **Yellow**: The next prayer coming up
+  - **Gray**: Other prayer times
+- **Scroll to see all** - You can scroll up and down to see all prayers
+- **Simple design** - Clean and easy to read
 
-### 📱 **Glance Menu**
-- **📊 Progress bar** - Shows how much time has passed
-- **⏱️ Quick info** - Shows current prayer and time left
-- **🔄 Always updated** - Works together with the main app
+### **Glance Menu**
+- **Progress bar** - Shows how much time has passed
+- **Quick info** - Shows current prayer and time left
+- **Always updated** - Works together with the main app
 
-### 🕌 **Prayer Times Included**
+### **Prayer Times Included**
 1. **Subuh** (Fajr) - Dawn prayer
 2. **Isyraq** - Sunrise prayer
 3. **Dhuha** - Mid-morning prayer
@@ -52,7 +49,7 @@
 
 ---
 
-## 🚀 How to Use This App
+## How to Use This App
 
 ### What You Need
 - **Garmin ConnectIQ SDK** - Download from Garmin website
@@ -77,7 +74,7 @@
    monkeydo bin/waktu_solat.prg epix2
    ```
 
-## ⚠️ Important Note
+## Important Note
 
 This app currently uses **test prayer times** that don't change based on your location or date. The times are set for testing purposes only.
 
@@ -89,13 +86,13 @@ This app currently uses **test prayer times** that don't change based on your lo
 
 ---
 
-## 🎨 Customization
+## Customization
 
 > **Want to customize the app?** Check out our comprehensive [**CUSTOMIZATION_GUIDE.md**](CUSTOMIZATION_GUIDE.md)
 
 ### Quick Customizations
 
-#### 🎯 **Change Prayer Times**
+#### **Change Prayer Times**
 Edit the mock data in `/source/waktuSolatHomeAssistantView.mc`:
 ```monkey-c
 _prayerTimes = {
@@ -106,13 +103,13 @@ _prayerTimes = {
 };
 ```
 
-#### 📍 **Change Location**
+#### **Change Location**
 Update the location in the same file:
 ```monkey-c
 _location = "Jasin";  // Change to your city
 ```
 
-#### 🎨 **Adjust Colors**
+#### **Adjust Colors**
 Modify prayer colors in the drawing section:
 ```monkey-c
 prayerColor = Graphics.COLOR_GREEN;  // Current prayer
@@ -121,32 +118,32 @@ prayerColor = Graphics.COLOR_YELLOW; // Next prayer
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 waktuSolatHomeAssistant/
-├── 📄 README.md                    # This file
-├── 📄 CUSTOMIZATION_GUIDE.md       # Detailed customization guide
-├── 📄 .gitignore                   # Git ignore rules
-├── 📄 manifest.xml                 # App manifest
-├── 📄 monkey.jungle                # Build configuration
-├── 📂 source/                      # Source code
-│   ├── 📄 waktuSolatHomeAssistantApp.mc      # Main app class
-│   ├── 📄 waktuSolatHomeAssistantView.mc     # Main view (UI)
-│   ├── 📄 waktuSolatHomeAssistantDelegate.mc # Input handling
-│   └── 📄 waktuSolatGlanceView.mc            # Glance view
-├── 📂 resources/                   # App resources
-│   ├── 📂 drawables/              # Images and icons
-│   │   ├── 📄 drawables.xml       # Drawable definitions
-│   │   └── 🖼️ waktu_solat_small.png # App logo
-│   ├── 📂 layouts/                # UI layouts
-│   └── 📂 strings/                # Text resources
-└── 📂 bin/                        # Build output (ignored by git)
+├── README.md                    # This file
+├── CUSTOMIZATION_GUIDE.md       # Detailed customization guide
+├── .gitignore                   # Git ignore rules
+├── manifest.xml                 # App manifest
+├── monkey.jungle                # Build configuration
+├── source/                      # Source code
+│   ├── waktuSolatHomeAssistantApp.mc      # Main app class
+│   ├── waktuSolatHomeAssistantView.mc     # Main view (UI)
+│   ├── waktuSolatHomeAssistantDelegate.mc # Input handling
+│   └── waktuSolatGlanceView.mc            # Glance view
+├── resources/                   # App resources
+│   ├── drawables/              # Images and icons
+│   │   ├── drawables.xml       # Drawable definitions
+│   │   └── waktu_solat_small.png # App logo
+│   ├── layouts/                # UI layouts
+│   └── strings/                # Text resources
+└── bin/                        # Build output (ignored by git)
 ```
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Building from Source
 
@@ -174,45 +171,45 @@ waktuSolatHomeAssistant/
 
 ### Code Architecture
 
-- **📱 Main App (`waktuSolatHomeAssistantApp.mc`)** - App initialization and lifecycle
-- **🖥️ Main View (`waktuSolatHomeAssistantView.mc`)** - Primary UI with prayer times
-- **🎮 Delegate (`waktuSolatHomeAssistantDelegate.mc`)** - Input handling (scrolling, menu)
-- **👁️ Glance View (`waktuSolatGlanceView.mc`)** - Quick glance widget
+- **Main App (`waktuSolatHomeAssistantApp.mc`)** - App initialization and lifecycle
+- **Main View (`waktuSolatHomeAssistantView.mc`)** - Primary UI with prayer times
+- **Delegate (`waktuSolatHomeAssistantDelegate.mc`)** - Input handling (scrolling, menu)
+- **Glance View (`waktuSolatGlanceView.mc`)** - Quick glance widget
 
 ---
 
-## 🎯 Roadmap
+## Roadmap
 
-### 🔄 Current Features (v1.0)
-- ✅ Mock prayer time data
-- ✅ 12-hour time format
-- ✅ Color-coded prayer indicators
-- ✅ Glance view with progress bar
-- ✅ Location display
-- ✅ Custom logo integration
+### Current Features (v1.0)
+- Mock prayer time data
+- 12-hour time format
+- Color-coded prayer indicators
+- Glance view with progress bar
+- Location display
+- Custom logo integration
 
-### 🚀 Planned Features (v2.0)
-- 🔄 **Real Prayer Time Calculation** - GPS-based accurate times
-- 🌍 **Multiple Calculation Methods** - MWL, ISNA, Egypt, etc.
-- 🔔 **Prayer Notifications** - Customizable alerts
-- 🕋 **Qibla Direction** - Compass pointing to Mecca
-- 🌙 **Islamic Calendar** - Hijri date display
-- ⚙️ **Settings Menu** - User preferences
-- 🌐 **Multi-language Support** - Arabic, Malay, English
+### Planned Features (v2.0)
+- **Real Prayer Time Calculation** - GPS-based accurate times
+- **Multiple Calculation Methods** - MWL, ISNA, Egypt, etc.
+- **Prayer Notifications** - Customizable alerts
+- **Qibla Direction** - Compass pointing to Mecca
+- **Islamic Calendar** - Hijri date display
+- **Settings Menu** - User preferences
+- **Multi-language Support** - Arabic, Malay, English
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how you can help:
 
-1. **🍴 Fork the repository**
-2. **🌿 Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **💾 Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **📤 Push to the branch** (`git push origin feature/amazing-feature`)
-5. **🔄 Open a Pull Request**
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
 
-### 📋 Contribution Guidelines
+### Contribution Guidelines
 - Follow existing code style and conventions
 - Test on multiple devices if possible
 - Update documentation for new features
@@ -220,34 +217,34 @@ We welcome contributions! Here's how you can help:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- **🕌 Islamic Community** - For guidance on prayer time requirements
-- **⌚ Garmin** - For the ConnectIQ platform
-- **👥 Contributors** - Everyone who helped improve this app
+- **Islamic Community** - For guidance on prayer time requirements
+- **Garmin** - For the ConnectIQ platform
+- **Contributors** - Everyone who helped improve this app
 
 ---
 
-## 📞 Support
+## Support
 
-- **🐛 Issues**: [GitHub Issues](https://github.com/salihinsaealal/waktu-solat-connectiq/issues)
-- **💬 Discussions**: [GitHub Discussions](https://github.com/salihinsaealal/waktu-solat-connectiq/discussions)
-<!-- - **📧 Email**: your-email@example.com -->
+- **Issues**: [GitHub Issues](https://github.com/salihinsaealal/waktu-solat-connectiq/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/salihinsaealal/waktu-solat-connectiq/discussions)
+<!-- - **Email**: your-email@example.com -->
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for the Muslim community**
+**Made with love for the Muslim community**
 
-*May this app help you maintain your daily prayers* 🤲
+*May this app help you maintain your daily prayers*
 
-[![⭐ Star this repo](https://img.shields.io/github/stars/salihinsaealal/waktu-solat-connectiq?style=social)](https://github.com/salihinsaealal/waktu-solat-connectiq)
+[![Star this repo](https://img.shields.io/github/stars/salihinsaealal/waktu-solat-connectiq?style=social)](https://github.com/salihinsaealal/waktu-solat-connectiq)
 
 </div>
