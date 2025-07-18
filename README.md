@@ -1,31 +1,45 @@
 # 🕌 Waktu Solat ConnectIQ App
 
-> **A beautiful and functional Islamic prayer times app for Garmin watches**
+> **A simple Islamic prayer times app for Garmin watches**
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/your-repo/waktu-solat-connectiq)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/salihinsaealal/waktu-solat-connectiq)
 [![ConnectIQ](https://img.shields.io/badge/ConnectIQ-Compatible-blue.svg)](https://developer.garmin.com/connect-iq/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
+## 📱 Screenshots
+
+<div align="center">
+
+### Main App View
+![Full App](FullApp.png)
+
+### Glance View
+![Glance Menu](Glance.png)
+
+</div>
+
+> **Note**: This app currently uses mock prayer times for testing. We plan to add automatic prayer time fetching from API in future updates.
+
 ---
 
-## ✨ Features
+## ✨ What This App Does
 
-### 🎯 **Main App View**
-- **🖼️ Custom Logo Display** - Beautiful app branding at the top
-- **⏰ Real-time Countdown** - Shows remaining time until next prayer (HH:MM format)
-- **📍 Location Display** - Shows current location (Jasin) in green
-- **🕐 12-Hour Prayer Times** - All prayer times displayed with AM/PM format
-- **🎨 Color-Coded Prayers** - Visual indicators for current and next prayers
-  - 🟢 **Green**: Current prayer period
-  - 🟡 **Yellow**: Next upcoming prayer
-  - ⚪ **Gray**: Other prayers
-- **📜 Scrollable List** - Navigate through all 7 prayer times
-- **🎛️ Clean UI** - Professional, minimalist design
+### 🎯 **Main App**
+- **🖼️ Logo at the top** - Shows the app icon
+- **⏰ Time countdown** - Shows how much time left until next prayer (HH:MM format)
+- **📍 Location** - Shows your location (currently shows "Jasin")
+- **🕐 Prayer times** - All times shown in 12-hour format with AM/PM
+- **🎨 Color coding** - Easy to see which prayer is which
+  - 🟢 **Green**: The prayer time you're in now
+  - 🟡 **Yellow**: The next prayer coming up
+  - ⚪ **Gray**: Other prayer times
+- **📜 Scroll to see all** - You can scroll up and down to see all prayers
+- **🎛️ Simple design** - Clean and easy to read
 
-### 📱 **Glance View**
-- **📊 Progress Bar** - Visual progress toward next prayer
-- **⏱️ Quick Info** - Current prayer and time remaining
-- **🔄 Auto-sync** - Stays synchronized with main app data
+### 📱 **Glance Menu**
+- **📊 Progress bar** - Shows how much time has passed
+- **⏱️ Quick info** - Shows current prayer and time left
+- **🔄 Always updated** - Works together with the main app
 
 ### 🕌 **Prayer Times Included**
 1. **Subuh** (Fajr) - Dawn prayer
@@ -38,18 +52,18 @@
 
 ---
 
-## 🚀 Quick Start
+## 🚀 How to Use This App
 
-### Prerequisites
-- **Garmin ConnectIQ SDK** installed
-- **Compatible Garmin device** (tested on epix2)
-- **Developer key** for signing
+### What You Need
+- **Garmin ConnectIQ SDK** - Download from Garmin website
+- **Compatible Garmin watch** - Tested on epix2
+- **Developer key** - For building the app
 
-### Installation
+### Steps to Install
 
-1. **Clone the repository**
+1. **Download the code**
    ```bash
-   git clone https://github.com/your-repo/waktu-solat-connectiq.git
+   git clone https://github.com/salihinsaealal/waktu-solat-connectiq.git
    cd waktu-solat-connectiq
    ```
 
@@ -58,10 +72,20 @@
    monkeyc -f monkey.jungle -d epix2 -o bin/waktu_solat.prg -y developer_key
    ```
 
-3. **Install on device/simulator**
+3. **Put it on your watch**
    ```bash
    monkeydo bin/waktu_solat.prg epix2
    ```
+
+## ⚠️ Important Note
+
+This app currently uses **test prayer times** that don't change based on your location or date. The times are set for testing purposes only.
+
+**Future plans:**
+- Add real prayer time calculation
+- Get prayer times from online API
+- Use your GPS location
+- Update times automatically
 
 ---
 
