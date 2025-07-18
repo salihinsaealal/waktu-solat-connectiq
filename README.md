@@ -224,6 +224,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *May this app help you maintain your daily prayers* 🤲
 
-[![⭐ Star this repo](https://img.shields.io/github/stars/your-repo/waktu-solat-connectiq?style=social)](https://github.com/salihinsaealal/waktu-solat-connectiq)
+[![⭐ Star this repo](https://img.shields.io/github/stars/salihinsaealal/waktu-solat-connectiq?style=social)](https://github.com/salihinsaealal/waktu-solat-connectiq)
 
 </div>
